@@ -23,7 +23,8 @@ export default class Matrix extends Component {
   //gets selected from either my this.State or changeColor
 
 
-
+//getSelectedColor is a prop which points to the getSelectedColor function in this class
+//this doesnt invoke it.
   genRow = (vals) => (
     vals.map((val, idx) => <Cell key={idx} color={val} getSelectedColor={this.getSelectedColor}  />)
   )

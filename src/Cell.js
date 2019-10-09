@@ -9,7 +9,10 @@ export default class Cell extends Component {
       color: this.props.color
     }
   }
-
+  //on click we run the function pointed to by the onClick prop which is handleClick
+  //in handle click we INVOKE the getSelectedColor function which is defined in Matrix.js
+  // extra handleClick isnt an anonymous function its in essence handleClick(params) if it
+  // were to be run some where else.
   handleClick = () => {
     const newColor = this.props.getSelectedColor()
     this.setState({
